@@ -4,4 +4,10 @@ Rails.application.routes.draw do
 get "/users", to: 'user#index'
 post "/users", to: 'user#create'
 
+get "/foods", to: 'food#index'
+
+get "/eaten_cards", to: 'eaten_card#index'
+post "/eaten_cards", to: 'eaten_card#create'
+
+
 end

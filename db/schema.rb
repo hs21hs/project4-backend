@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 2019_12_03_001855) do
 
   create_table "foods", force: :cascade do |t|
     t.string "name"
+    t.integer "calories"
+    t.integer "protein"
+    t.integer "carbs"
+    t.integer "fat"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
